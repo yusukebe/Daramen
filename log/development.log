@@ -1,6 +1,0 @@
-[Tue Jun 25 05:58:19 2013] [debug] Your secret passphrase needs to be changed!!!
-[Tue Jun 25 05:58:19 2013] [debug] GET "/".
-[Tue Jun 25 05:58:19 2013] [debug] Routing to controller "Daramen::Web::Example" and action "welcome".
-[Tue Jun 25 05:58:19 2013] [debug] Rendering template "example/welcome.html.ep".
-[Tue Jun 25 05:58:19 2013] [debug] Rendering template "layouts/default.html.ep".
-[Tue Jun 25 05:58:19 2013] [debug] 200 OK (0.022710s, 44.033/s).
