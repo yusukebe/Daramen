@@ -2,7 +2,7 @@ package Daramen::Web::Contoller::Root;
 use Mojo::Base 'Mojolicious::Controller';
 
 sub index {
-    $self = shift;
+    my $self = shift;
     $self->render();
 }
 
