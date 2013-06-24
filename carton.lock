@@ -1,0 +1,368 @@
+{
+   "modules" : {
+      "Mojolicious" : {
+         "dist" : "Mojolicious-4.16",
+         "mymeta" : {
+            "abstract" : "Real-time web framework",
+            "author" : [
+               "Sebastian Riedel <sri@cpan.org>"
+            ],
+            "dynamic_config" : 0,
+            "generated_by" : "ExtUtils::MakeMaker version 6.68, CPAN::Meta::Converter version 2.131560, CPAN::Meta::Converter version 2.130880",
+            "license" : [
+               "artistic_2"
+            ],
+            "meta-spec" : {
+               "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+               "version" : "2"
+            },
+            "name" : "Mojolicious",
+            "no_index" : {
+               "directory" : [
+                  "t",
+                  "inc",
+                  "t"
+               ]
+            },
+            "prereqs" : {
+               "build" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "0"
+                  }
+               },
+               "configure" : {
+                  "requires" : {
+                     "ExtUtils::MakeMaker" : "0"
+                  }
+               },
+               "runtime" : {
+                  "requires" : {}
+               }
+            },
+            "release_status" : "stable",
+            "resources" : {
+               "bugtracker" : {
+                  "web" : "http://github.com/kraih/mojo/issues"
+               },
+               "homepage" : "http://mojolicio.us",
+               "license" : [
+                  "http://www.opensource.org/licenses/artistic-license-2.0"
+               ],
+               "repository" : {
+                  "url" : "http://github.com/kraih/mojo"
+               },
+               "x_MailingList" : "http://groups.google.com/group/mojolicious"
+            },
+            "version" : "4.16"
+         },
+         "name" : "Mojolicious",
+         "pathname" : "S/SR/SRI/Mojolicious-4.16.tar.gz",
+         "provides" : {
+            "Mojo" : {
+               "file" : "Mojo.pm"
+            },
+            "Mojo::Asset" : {
+               "file" : "Mojo/Asset.pm"
+            },
+            "Mojo::Asset::File" : {
+               "file" : "Mojo/Asset/File.pm"
+            },
+            "Mojo::Asset::Memory" : {
+               "file" : "Mojo/Asset/Memory.pm"
+            },
+            "Mojo::Base" : {
+               "file" : "Mojo/Base.pm"
+            },
+            "Mojo::ByteStream" : {
+               "file" : "Mojo/ByteStream.pm"
+            },
+            "Mojo::Cache" : {
+               "file" : "Mojo/Cache.pm"
+            },
+            "Mojo::Collection" : {
+               "file" : "Mojo/Collection.pm"
+            },
+            "Mojo::Content" : {
+               "file" : "Mojo/Content.pm"
+            },
+            "Mojo::Content::MultiPart" : {
+               "file" : "Mojo/Content/MultiPart.pm"
+            },
+            "Mojo::Content::Single" : {
+               "file" : "Mojo/Content/Single.pm"
+            },
+            "Mojo::Cookie" : {
+               "file" : "Mojo/Cookie.pm"
+            },
+            "Mojo::Cookie::Request" : {
+               "file" : "Mojo/Cookie/Request.pm"
+            },
+            "Mojo::Cookie::Response" : {
+               "file" : "Mojo/Cookie/Response.pm"
+            },
+            "Mojo::DOM" : {
+               "file" : "Mojo/DOM.pm"
+            },
+            "Mojo::DOM::CSS" : {
+               "file" : "Mojo/DOM/CSS.pm"
+            },
+            "Mojo::DOM::HTML" : {
+               "file" : "Mojo/DOM/HTML.pm"
+            },
+            "Mojo::Date" : {
+               "file" : "Mojo/Date.pm"
+            },
+            "Mojo::EventEmitter" : {
+               "file" : "Mojo/EventEmitter.pm"
+            },
+            "Mojo::Exception" : {
+               "file" : "Mojo/Exception.pm"
+            },
+            "Mojo::Headers" : {
+               "file" : "Mojo/Headers.pm"
+            },
+            "Mojo::HelloWorld" : {
+               "file" : "Mojo/HelloWorld.pm"
+            },
+            "Mojo::Home" : {
+               "file" : "Mojo/Home.pm"
+            },
+            "Mojo::IOLoop" : {
+               "file" : "Mojo/IOLoop.pm"
+            },
+            "Mojo::IOLoop::Client" : {
+               "file" : "Mojo/IOLoop/Client.pm"
+            },
+            "Mojo::IOLoop::Delay" : {
+               "file" : "Mojo/IOLoop/Delay.pm"
+            },
+            "Mojo::IOLoop::Server" : {
+               "file" : "Mojo/IOLoop/Server.pm"
+            },
+            "Mojo::IOLoop::Stream" : {
+               "file" : "Mojo/IOLoop/Stream.pm"
+            },
+            "Mojo::JSON" : {
+               "file" : "Mojo/JSON.pm"
+            },
+            "Mojo::JSON::Pointer" : {
+               "file" : "Mojo/JSON/Pointer.pm"
+            },
+            "Mojo::Loader" : {
+               "file" : "Mojo/Loader.pm"
+            },
+            "Mojo::Log" : {
+               "file" : "Mojo/Log.pm"
+            },
+            "Mojo::Message" : {
+               "file" : "Mojo/Message.pm"
+            },
+            "Mojo::Message::Request" : {
+               "file" : "Mojo/Message/Request.pm"
+            },
+            "Mojo::Message::Response" : {
+               "file" : "Mojo/Message/Response.pm"
+            },
+            "Mojo::Parameters" : {
+               "file" : "Mojo/Parameters.pm"
+            },
+            "Mojo::Path" : {
+               "file" : "Mojo/Path.pm"
+            },
+            "Mojo::Reactor" : {
+               "file" : "Mojo/Reactor.pm"
+            },
+            "Mojo::Reactor::EV" : {
+               "file" : "Mojo/Reactor/EV.pm"
+            },
+            "Mojo::Reactor::Poll" : {
+               "file" : "Mojo/Reactor/Poll.pm"
+            },
+            "Mojo::Server" : {
+               "file" : "Mojo/Server.pm"
+            },
+            "Mojo::Server::CGI" : {
+               "file" : "Mojo/Server/CGI.pm"
+            },
+            "Mojo::Server::Daemon" : {
+               "file" : "Mojo/Server/Daemon.pm"
+            },
+            "Mojo::Server::Hypnotoad" : {
+               "file" : "Mojo/Server/Hypnotoad.pm"
+            },
+            "Mojo::Server::Morbo" : {
+               "file" : "Mojo/Server/Morbo.pm"
+            },
+            "Mojo::Server::PSGI" : {
+               "file" : "Mojo/Server/PSGI.pm"
+            },
+            "Mojo::Server::Prefork" : {
+               "file" : "Mojo/Server/Prefork.pm"
+            },
+            "Mojo::Template" : {
+               "file" : "Mojo/Template.pm"
+            },
+            "Mojo::Transaction" : {
+               "file" : "Mojo/Transaction.pm"
+            },
+            "Mojo::Transaction::HTTP" : {
+               "file" : "Mojo/Transaction/HTTP.pm"
+            },
+            "Mojo::Transaction::WebSocket" : {
+               "file" : "Mojo/Transaction/WebSocket.pm"
+            },
+            "Mojo::URL" : {
+               "file" : "Mojo/URL.pm"
+            },
+            "Mojo::Upload" : {
+               "file" : "Mojo/Upload.pm"
+            },
+            "Mojo::UserAgent" : {
+               "file" : "Mojo/UserAgent.pm"
+            },
+            "Mojo::UserAgent::CookieJar" : {
+               "file" : "Mojo/UserAgent/CookieJar.pm"
+            },
+            "Mojo::UserAgent::Transactor" : {
+               "file" : "Mojo/UserAgent/Transactor.pm"
+            },
+            "Mojo::Util" : {
+               "file" : "Mojo/Util.pm"
+            },
+            "Mojolicious" : {
+               "file" : "Mojolicious.pm",
+               "version" : "4.16"
+            },
+            "Mojolicious::Command" : {
+               "file" : "Mojolicious/Command.pm"
+            },
+            "Mojolicious::Command::cgi" : {
+               "file" : "Mojolicious/Command/cgi.pm"
+            },
+            "Mojolicious::Command::cpanify" : {
+               "file" : "Mojolicious/Command/cpanify.pm"
+            },
+            "Mojolicious::Command::daemon" : {
+               "file" : "Mojolicious/Command/daemon.pm"
+            },
+            "Mojolicious::Command::eval" : {
+               "file" : "Mojolicious/Command/eval.pm"
+            },
+            "Mojolicious::Command::generate" : {
+               "file" : "Mojolicious/Command/generate.pm"
+            },
+            "Mojolicious::Command::generate::app" : {
+               "file" : "Mojolicious/Command/generate/app.pm"
+            },
+            "Mojolicious::Command::generate::lite_app" : {
+               "file" : "Mojolicious/Command/generate/lite_app.pm"
+            },
+            "Mojolicious::Command::generate::makefile" : {
+               "file" : "Mojolicious/Command/generate/makefile.pm"
+            },
+            "Mojolicious::Command::generate::plugin" : {
+               "file" : "Mojolicious/Command/generate/plugin.pm"
+            },
+            "Mojolicious::Command::get" : {
+               "file" : "Mojolicious/Command/get.pm"
+            },
+            "Mojolicious::Command::inflate" : {
+               "file" : "Mojolicious/Command/inflate.pm"
+            },
+            "Mojolicious::Command::prefork" : {
+               "file" : "Mojolicious/Command/prefork.pm"
+            },
+            "Mojolicious::Command::psgi" : {
+               "file" : "Mojolicious/Command/psgi.pm"
+            },
+            "Mojolicious::Command::routes" : {
+               "file" : "Mojolicious/Command/routes.pm"
+            },
+            "Mojolicious::Command::test" : {
+               "file" : "Mojolicious/Command/test.pm"
+            },
+            "Mojolicious::Command::version" : {
+               "file" : "Mojolicious/Command/version.pm"
+            },
+            "Mojolicious::Commands" : {
+               "file" : "Mojolicious/Commands.pm"
+            },
+            "Mojolicious::Controller" : {
+               "file" : "Mojolicious/Controller.pm"
+            },
+            "Mojolicious::Lite" : {
+               "file" : "Mojolicious/Lite.pm"
+            },
+            "Mojolicious::Plugin" : {
+               "file" : "Mojolicious/Plugin.pm"
+            },
+            "Mojolicious::Plugin::Charset" : {
+               "file" : "Mojolicious/Plugin/Charset.pm"
+            },
+            "Mojolicious::Plugin::Config" : {
+               "file" : "Mojolicious/Plugin/Config.pm"
+            },
+            "Mojolicious::Plugin::DefaultHelpers" : {
+               "file" : "Mojolicious/Plugin/DefaultHelpers.pm"
+            },
+            "Mojolicious::Plugin::EPLRenderer" : {
+               "file" : "Mojolicious/Plugin/EPLRenderer.pm"
+            },
+            "Mojolicious::Plugin::EPRenderer" : {
+               "file" : "Mojolicious/Plugin/EPRenderer.pm"
+            },
+            "Mojolicious::Plugin::HeaderCondition" : {
+               "file" : "Mojolicious/Plugin/HeaderCondition.pm"
+            },
+            "Mojolicious::Plugin::JSONConfig" : {
+               "file" : "Mojolicious/Plugin/JSONConfig.pm"
+            },
+            "Mojolicious::Plugin::Mount" : {
+               "file" : "Mojolicious/Plugin/Mount.pm"
+            },
+            "Mojolicious::Plugin::PODRenderer" : {
+               "file" : "Mojolicious/Plugin/PODRenderer.pm"
+            },
+            "Mojolicious::Plugin::TagHelpers" : {
+               "file" : "Mojolicious/Plugin/TagHelpers.pm"
+            },
+            "Mojolicious::Plugins" : {
+               "file" : "Mojolicious/Plugins.pm"
+            },
+            "Mojolicious::Renderer" : {
+               "file" : "Mojolicious/Renderer.pm"
+            },
+            "Mojolicious::Routes" : {
+               "file" : "Mojolicious/Routes.pm"
+            },
+            "Mojolicious::Routes::Match" : {
+               "file" : "Mojolicious/Routes/Match.pm"
+            },
+            "Mojolicious::Routes::Pattern" : {
+               "file" : "Mojolicious/Routes/Pattern.pm"
+            },
+            "Mojolicious::Routes::Route" : {
+               "file" : "Mojolicious/Routes/Route.pm"
+            },
+            "Mojolicious::Sessions" : {
+               "file" : "Mojolicious/Sessions.pm"
+            },
+            "Mojolicious::Static" : {
+               "file" : "Mojolicious/Static.pm"
+            },
+            "Mojolicious::Types" : {
+               "file" : "Mojolicious/Types.pm"
+            },
+            "Test::Mojo" : {
+               "file" : "Test/Mojo.pm"
+            },
+            "ojo" : {
+               "file" : "ojo.pm"
+            }
+         },
+         "target" : "Mojolicious",
+         "version" : "4.16"
+      }
+   },
+   "version" : "0.9"
+}
