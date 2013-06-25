@@ -1,0 +1,9 @@
+CREATE TABLE entry (
+  id BIGINT UNSIGNED NOT NULL,
+  text TEXT,
+  user_id BIGINT UNSIGNED NOT NULL,
+  screen_name VARCHAR(20) NOT NULL,
+  image_url VARCHAR(255) NOT NULL,
+  created_at DATETIME NOT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET 'utf8' engine=InnoDB;;
