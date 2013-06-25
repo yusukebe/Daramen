@@ -60,11 +60,11 @@ git clone したプロジェクトのディレクトリにて以下を実行。
 
 ### クローラーの実行
 
-   $ carton exec -- perl cli/crawler.pl
+    $ carton exec -- perl cli/crawler.pl
 
 ### サーバの起動
 
-   $ carton exec -- plackup -R lib,templates app.psgi
+    $ carton exec -- plackup -R lib,templates app.psgi
 
 すると
 
