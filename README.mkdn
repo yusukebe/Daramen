@@ -1,0 +1,74 @@
+# だらめん
+
+## これは何？
+
+ラー **メン** 画像を **だら**だら 閲覧するためのWebアプリです。
+Twitterからそれらしき画像をクロールしてDBに入れてWebで表示させる感じです。
+
+## どのように動かすのか？
+
+**Mac OSX** 前提で話を進めます。Homebrewも入れておいてください。
+ 
+### MySQLのインストールと起動
+
+    $ brew install mysql
+
+    $ unset TMPDIR
+    $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+
+    $ mysql.server start
+
+### Perl環境の構築
+
+    $ curl -kL http://install.perlbrew.pl | bash
+    $ echo source ~/perl5/perlbrew/etc/bashrc >> $HOME/.bashrc
+    $ source ~/.bashrc
+
+これでperlbrewが入るので
+
+    $ perlbrew available
+
+一覧から 5.16.x か 5.14.x かなんかを入れる
+
+    $ perlbrew install perl-5.14.4
+    $ perlbrew switch perl-5.14.4
+
+cpanmとCartonも入れる
+ 
+    $ perlbrew install-cpanm
+    $ cpanm Carton
+
+### プロジェクトの依存モジュールを入れる
+
+git clone したプロジェクトのディレクトリにて以下を実行。
+
+    $ carton install
+
+### データベースのセットアップ
+
+    $ mysql -u root
+
+    mysql> create database daramen;
+    mysql> quit
+
+    $ mysql -u root daramen < etc/daramen_schema.sql
+
+### 設定の変更
+
+ローカルのplackupで動かす場合は config ディレクトリの「sample.pl」を「development.pl」という名前でコピーして、
+該当する箇所を埋める。dev.twitter.com などでconsumer_keyなどが手に入ります。
+
+### クローラーの実行
+
+    $ carton exec -- perl cli/crawler.pl
+
+### サーバの起動
+
+    $ carton exec -- plackup -R lib,templates app.psgi
+
+すると
+
+> http://localhost:5000/
+
+でラーメン画像がたくさん見れるはず！
+

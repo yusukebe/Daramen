@@ -7,8 +7,7 @@ our $VERSION = 'v0.1';
 
 sub config {
     my $mode = $ENV{PLACK_ENV} || 'development';
-    my $fname =
-      File::Spec->catfile( Daramen->base_dir(), 'config', $mode . '.pl' );
+    my $fname = File::Spec->catfile( Daramen->base_dir(), 'config' ,  $mode . '.pl' );
     my $config = undef;
     if( -f $fname ){
         $config = do $fname or die "Cannnot load configuration file: $fname";

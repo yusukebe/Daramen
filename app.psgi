@@ -9,5 +9,3 @@ use Daramen::Web;
 my $psgi = Mojo::Server::PSGI->new( app => Daramen::Web->new() );
 my $app = sub { $psgi->run(@_) };
 $app;
-
-
