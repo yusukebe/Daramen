@@ -1,10 +1,27 @@
 % layout 'default';
 % title 'Welcome to Daramen';
 
-<h1>だらめん</h1>
-
-% for my $entry (@$entries) {
-<div class="entry">
-  <img src="<%= $entry->image_url %>" />
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">だらめん</a>
+        </div>
+    </div>
 </div>
-% }
+
+<div class="container" id="container">
+    % for my $entry (@$entries) {
+    <div class="entry thumbnail">
+        <a href="<%= $entry-> image_url %>" rel="lightbox">
+        <div class="ramen-img" 
+            style="background-image:url(<%= $entry->image_url %>)"></div>
+        </a>
+        <p class="tweet media">
+            <img class="user-img pull-left" 
+            src="http://api.dan.co.jp/twicon/<%= $entry->screen_name %>/normal">
+            <span style="font-weight:bold">@<%= $entry->screen_name %></span>
+            <%= $entry->text %>
+        </p>
+    </div>
+    % }
+</div>
