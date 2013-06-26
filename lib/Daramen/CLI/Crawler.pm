@@ -18,16 +18,6 @@ sub _build_nt {
 
 sub run {
     my $self = shift;
-<<<<<<< HEAD
-    my $result = $self->nt->search({ q => $self->query, 
-                                      include_entities => 1,
-                                      result_type      => 'recent',
-                                      count            => 100
-                                  });
-    my $db = Daramen::DB->new({ connect_info => Daramen->config->{connect_info} });
-    for my $tweet (@{$result->{statuses}}){
-        
-=======
     $self->crawl();
 }
 
@@ -44,7 +34,6 @@ sub crawl {
     my $db = Daramen::DB->new({ connect_info => Daramen->config->{connect_info} });
     for my $tweet (@{$result->{statuses}}) {
 
->>>>>>> finished
         next if $tweet->{retweeted};
         next unless $tweet->{entities}{media}[0];
 
@@ -52,21 +41,13 @@ sub crawl {
         my $image_url = $tweet->{entities}{media}[0]{media_url};
 
         next if $db->single('entry', { id => $id });
-<<<<<<< HEAD
         next if $db->single('entry', { image_url => $image_url });
-=======
-        next if $db->single('entry', { id => $image_url });
->>>>>>> finished
 
         my $text = $tweet->{text};
         my $user_id = $tweet->{user}{id};
         my $screen_name = $tweet->{user}{screen_name};
         my $created_at = $tweet->{created_at};
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> finished
         my $entry;
         try {
             $entry = $db->insert('entry',{
