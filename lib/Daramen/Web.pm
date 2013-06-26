@@ -8,7 +8,8 @@ sub startup {
 
     $self->helper(
         db => sub {
-            Daramen::DB->new({ connect_info => Daramen->config->{connect_info} })
+            Daramen::DB->new({ connect_info => Daramen->config->{connect_info}
+                           });
         }
     );
 

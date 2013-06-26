@@ -5,6 +5,7 @@ use Teng::Schema::Declare;
 use DateTime;
 use DateTime::Format::Strptime;
 use DateTime::Format::MySQL;
+use Encode;
 
 table {
     name 'entry';
@@ -17,6 +18,10 @@ table {
             time_zone => 'Asia/Tokyo',
         )->parse_datetime($value);
         return DateTime->from_object( object => $dt );
+    };
+    inflate qr/^text$/ => sub {
+        my ($value) = @_;
+        decode_utf8($value);
     };
     deflate qr/.+_at$/ => sub {
         my ($value) = @_;
