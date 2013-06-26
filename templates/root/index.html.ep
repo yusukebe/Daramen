@@ -1,4 +1,11 @@
 % layout 'default';
 % title 'Welcome to Daramen';
 
-<h1>だらめん</h1>
+<h1>だらめん！</h1>
+
+% for my $entry (@$entries) {
+<div style="float:left;margin-right:2px;">
+  <img style="max-height:200px;min-height:200px;" src="<%= $entry->image_url %>" />
+  <br /><%= $entry->text %>
+</div>
+% }

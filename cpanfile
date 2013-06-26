@@ -1,1 +1,11 @@
 requires 'Mojolicious';
+requires 'Mouse';
+requires 'DBD::mysql';
+requires 'Teng';
+requires 'DateTime';
+requires 'DateTime::Format::Strptime';
+requires 'DateTime::Format::MySQL';
+requires 'Net::OAuth', 0.25;
+requires 'Net::Twitter::Lite';
+requires 'Try::Tiny';
+requires 'Plack';
