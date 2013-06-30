@@ -37,10 +37,17 @@
         #header {
             background-color:#f00;
         }
+        #catch {
+            margin-top:10px;
+            color:#777;
+
+        }
 
     </style>
   </head>
-  <body><%= content %></body>
+  <body>
+            <div id="fb-root"></div>
+      <%= content %></body>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="/js/lightbox.js"></script>
@@ -51,4 +58,11 @@
         });
     });
     </script>
+            <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=154727404583963";
+                          fjs.parentNode.insertBefore(js, fjs);
+                          }(document, 'script', 'facebook-jssdk'));</script>
 </html>

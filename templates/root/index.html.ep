@@ -5,6 +5,8 @@
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="#">だらめん</a>
+            <div id="catch">いま、ラーメンを食べている人たち</div>
+            <div style="position:absolute; right:100px;top:10px;" class="fb-like" data-href="http://daramen.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
         </div>
     </div>
 </div>
