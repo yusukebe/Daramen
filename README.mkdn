@@ -42,7 +42,7 @@ cpanmとCartonも入れる
 
 git clone したプロジェクトのディレクトリにて以下を実行。
 
-    $ carton install
+    $ carton install --deployment
 
 ### データベースのセットアップ
 
